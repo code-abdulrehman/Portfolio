@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup for Tailwind CSS and GSAP without React.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles/input.css -o ./dist/styles/output.css",
+    "watch": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "gsap": "^3.12.5",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

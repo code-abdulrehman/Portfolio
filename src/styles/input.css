@@ -1,0 +1,11 @@
+@import url('./fonts.css');
+@import url('./../assets/fontawesome/css/all.css');
+@import url('./../assets/fontawesome/css/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer{
+
+}
+

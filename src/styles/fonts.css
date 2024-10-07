@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+    font-weight: 900; /* Black Italic */
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Repeat for other weights and styles... */
+  
+  /* Set base styles using custom fonts */
+  body {
+    font-family: 'Roboto', sans-serif; /* Default font for body */
+  }
+  @import url('./../assets/fonts/kajiro/stylesheet.css');
+  @font-face {
+    font-family: 'Kajiro';
+    src: url('./../assets/fonts/kajiro/Kajiro.ttf') format('truetype'); 
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+  @font-face {
+    font-family: 'Kajiro';
+    src: url('./../assets/fonts/kajiro/Kajiro.ttf') format('truetype'); 
+    /* font-weight: 500; */
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-Kajiro,
+.font-kajiro{
+  font-family: "Kajiro";
+}
+
+.font-fjalla,
+.font-Fjalla {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.font-Urdu,
+.font-urdu {
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}

@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <script src="./src/js/gsap.min.js"></script>
+    <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- header  -->
+    <header id="home" class="absolute z-[500] w-screen flex justify-center items-center">
+        <nav class=" flex justify-between items-center container px-4 md:px-12 py-4 text-2xl text-black font-medium top-0 mx-auto mb-6 backdrop-blur-lg bg-[#fffffe59] "
+            id="nav">
+            <div class="logo group/logo inline ">
+
+                <span class="font-heading capitalize font-urdu ">
+
+                    <a class="group-hover/logo:hidden inline transition">
+                        <span class=" text-black font-bold">&#60;</span>
+                        <b class="pr--text select-none">AbdulRehman</b>
+                        <span class="text-black font-bold">&#x2044;&#x3E;</span>
+                </span>
+
+                <span class="font-heading capitalize font-mono ">
+
+                    <a href="#" class="hidden group-hover/logo:inline transition">
+                        <span class="font-bold text-black">&#60;&#x2044;</span>
+                        <b class="pr--text font-urdu select-none"> عبدالرحمن</b>
+                        <span class="font-bold text-black">&#x3E;</span> </a>
+                </span>
+
+            </div>
+
+            <span class="menu-icon open-icon cursor-pointer" id="menuOpen">
+                <i class="fa-solid fa-burger"></i>
+            </span>
+
+        </nav>
+        <div id="navBox"
+            class="full-container absolute w-full md:w-[60%] h-screen bg-[#ffffff6c] backdrop-blur-[10px] px-12 py-16 top-0 -right-[100%] md:-right-[61%] hidden md:flex flex-col gap-[3rem] items-start text-7xl font-medium font-Kajiro">
+            <h4 class="hover:underline"> <a href="#home"> Home</a></h4>
+            <h4 class="hover:underline"> <a href="#about"> About</a></h4>
+            <h4 class="hover:underline"> <a href="#projects"> Project</a></h4>
+            <h4 class="hover:underline"> <a href="#contact_us"> Contact us</a></h4>
+
+            <span
+                class="menu-icon close-icon absolute right-10 md:right-16 top-6 text-lg hover:text-red-600 cursor-pointer"
+                id="menuClose">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+    </header>
+
+    <!-- landing page  hero section -->
+    <section class="h-screen w-screen flex justify-center items-center">
+        <!-- bg animation boxeex  -->
+        <div class="absContainer fixed w-full h-full"></div>
+
+        <div
+            class="container mx-auto mt-12 h-[90vh] justify-center items-center text-7xl z-[100]  backdrop-blur-lg bg-[#fffffe59] font-Kajiro grid md:grid-cols-3 grid-cols-1 grid-rows-2 md:grid-rows-1 p-4 md:p-12 ">
+
+            <div
+                class=" row-span-2 md:row-span-1 md:col-span-2 w-full h-full hero-left font-kajiro font-ligh md:text-[100px] lg:text-[150px] flex flex-col sm: justify-center lg:justify-center">
+                <div class="animationWords capitalize">
+                    <h1>
+                        Hi<span class="pr--text font-urdu">,</span>
+                    </h1>
+                    <h1>
+                        I'm <span
+                            class="word pr--text drop-shadow-md sm:text-[50px] md:text-[80px] xl:text-[150px] group/name select-none">
+                            <span class="group-hover/name:hidden inline">Abdul&nbsp;Rehman</span>
+                            <span class="group-hover/name:inline hidden font-urdu ">عبدالرحمن</span>
+                        </span>
+                    </h1>
+                    <h1>
+                        a dedicated Frontend Developer <span class="pr--text">.</span>
+                    </h1>
+
+                    <!-- cv btn  -->
+                    <div class="flex justify-start w-full">
+                        <a href="./src/assets/images/avatar-2.png" download="">
+                            <button
+                                class=" border-2 border-black text-7xl p-2 hover:underline hover:border-transparent transition-all duration-200">Download
+                                CV</button>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div
+                    class="col-span-1 bg-sky-6 h-1/2 absolute md:scale-[2.1] -right-20  img -translate-y-5 -translate-x-24 z-[-2]">
+                    <img src="./src/assets/images/avatar-2.png" class="img select-none md:w-full h-full" alt="avatar-2">
+
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- About + Experience -->
+    <section id="about" class="min-h-screen w-screen flex flex-col items-center">
+        <div
+            class="container mx-auto mt-12 min-h-[90vh] justify-center items-center z-[100] backdrop-blur-lg bg-[#fffffe59] flex flex-col overflow-hidden p-4 md:p-12 gap-6">
+            <h2 class="flex font-urdu pr--text text-[2rem] font-bold">About</h2>
+
+            <!-- Profile -->
+            <div class="profile grid grid-cols-6 w-full min-h-24 text-ellipsis  mb-2 xl:mb-0">
+                <div class="col-span-5 flex items-start flex-col overflow-hidden text-ellipsis">
+                    <span
+                        class="font-urdu word pr--text font-bold drop-shadow-md text-[2rem] group/name select-none pr-6">
+                        <span class="group-hover/name:hidden inline">Abdul&nbsp;Rehman
+                            <a href="https://www.linkedin.com/in/abdulrehman62" target="_blank">
+                                <i class="fa-solid fa-link text-lg text-black"></i>
+                            </a>
+                        </span>
+                        <span class="group-hover/name:inline hidden font-urdu">عبدالرحمن <a
+                                href="https://www.linkedin.com/in/abdulrehman62" target="_blank">
+                                <i class="fa-solid fa-link text-lg text-black group-hover/name:inline hidden"></i>
+                            </a>
+                        </span>
+                    </span>
+                    <p class="text-lg font-sans">
+                        <b class="pr--text font-urdu">#</b> Developer | <b class="pr--text font-urdu">#</b> Self-Learner
+                        |<br class="inline md:hidden">
+                        <b class="pr--text font-urdu">#</b> Innovative | <b class="pr--text font-urdu">#</b> Consistent
+                    </p>
+                </div>
+                <div class="col-span-1 md:-translate-x-12 w-16 md:w-24 h-16 md:h-24 rounded-full overflow-hidden pr--bg">
+                    <img src="./src/assets/images/avatar-2.png" alt="avatar-2"
+                        class="object-contain scale-150 translate-y-6 w-full h-full" width="40" height="45">
+                </div>
+            </div>
+
+            <!-- Work -->
+            <div class="work flex flex-col items-start w-full min-h-32 text-ellipsis overflow-hidden">
+                <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
+                    Work
+                </h3>
+                <p class="text-lg font-sans text-black">
+                    &nbsp;&nbsp;&nbsp;&nbsp; I am a Junior Frontend Developer at <b
+                        class="font-urdu font-bold">Dycoders</b>, where I started 5 months ago. In my role, I focus on
+                    crafting engaging and user-friendly web interfaces, leveraging my skills to bring innovative
+                    projects to life.
+                </p>
+            </div>
+
+            <!-- Bio -->
+            <div class="bio flex flex-col items-start w-full min-h-44 max-h-auto text-ellipsis  mb-2 xl:mb-0">
+                <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
+                    Bio
+                </h3>
+                <ul class="text-lg font-sans text-black p h-auto mb-2">
+                    <li class="flex gap-6">
+                        <b class="font-bold max-w-48 overflow-hidden text-ellipsis">2005</b>
+                        <span class="overflow-hidden text-ellipsis line-clamp-2">
+                            Born in <b class="font-urdu font-bold">Karachi (کراچی), Pakistan (پاکستان)</b>.
+                            Currently living in <b class="font-urdu font-bold">Hasilpur (حاصل پور)</b>.
+                        </span>
+                    </li>
+
+                    <li class="flex gap-6">
+                        <b class="font-bold max-w-48 overflow-hidden text-ellipsis">2022</b>
+                        <span class="overflow-hidden text-ellipsis line-clamp-2">
+                            Began my journey in <b class="font-urdu font-bold">IT</b>.
+                        </span>
+                    </li>
+                    <li class="flex gap-6">
+                        <b class="font-bold max-w-48 overflow-hidden text-ellipsis">2024 - Present</b>
+                        <span class="overflow-hidden text-ellipsis line-clamp-2">
+                            Studying Computer Science at HSC <b class="font-urdu font-bold">(Hasilpur Science
+                                College)</b>.
+                        </span>
+                    </li>
+                    <li class="flex gap-6">
+                        <b class="font-bold max-w-48 overflow-hidden text-ellipsis">I <i
+                                class="fa-solid fa-heart text-rose-600"></i></b>
+                        <span class="overflow-hidden text-ellipsis line-clamp-2">
+                            Passionate about coding, exploring the web, playing football, pushing boundaries, gathering information and having
+                            fun. <b class="font-urdu font-bold">AR</b>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Experience -->
+            <div class="experience flex flex-col items-start w-full min-h-24 text-ellipsis mb-2 xl:mb-0">
+                <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
+                    Experience
+                </h3>
+                <ul class="text-lg font-sans text-black">
+                    <li class="flex gap-6">
+                        <b class="font-bold max-w-48 overflow-hidden text-ellipsis">2024 - Present</b>
+                        <span class="overflow-hidden text-ellipsis line-clamp-2">
+                            Currently advancing my career in IT with <b class="font-urdu font-bold">Dycoders</b>.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills flex flex-col items-start w-full text-ellipsis min-h-32  mb-2 xl:mb-0">
+                <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
+                    Skills
+                </h3>
+                <ul class="text-lg text-black">
+                    <li class="flex gap-4 items-center">
+                        <b class="font-bold">Frontend:</b>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/HTML5.svg" alt="html5" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">HTML5 </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/CSS3.svg" alt="htmcss3l" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">CSS3 </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/JavaScript.svg" alt="js" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">JavaScript </div>
+                        </span>
+                        <!-- <img src="./src/assets/icons/TypeScript.svg" alt="ts" class="drop-shadow-md" width="20"> -->
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/JSON.svg" alt="json" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">JSON </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/react-1.svg" alt="react" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">React </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Vite.js.svg" alt="vite" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Vite </div>
+                        </span>
+                        <!-- <span>HTML, CSS, JavaScript, React</span> -->
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <b class="font-bold">Backend:</b>
+                        <span class="group/skillIcons">
+
+                        <img src="./src/assets/icons/Firebase.svg" alt="Firebase" class="drop-shadow-md cursor-pointer"
+                            width="25">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Firebase </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Socket.io.svg" alt="Socket.io"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Socket.io </div>
+                        </span>
+
+
+                        <!-- <span>Firebase, Socket</span> -->
+                    </li>
+                    <li class="flex gap-4 items-center">
+                        <b class="font-bold">Tools:</b>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Visual Studio Code (VS Code).svg" alt="Vs-code"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Vs Code </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Tailwind CSS.svg" alt="Tailwind"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Tailwind </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Bootstrap.svg" alt="Bootstrap"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Bootstrap </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Sass.svg" alt="Sass" class="drop-shadow-md cursor-pointer"
+                                width="28">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Sass </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/less_js.svg" alt="less" class="drop-shadow-md cursor-pointer"
+                                width="28">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">less.js </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Postman.svg" alt="Postman"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Postman </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Redux.svg" alt="Redux" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Redux </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Vercel.svg" alt="Vercel" class="drop-shadow-md cursor-pointer"
+                                width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Vercel </div>
+                        </span>
+                        <span class="group/skillIcons">
+
+                            <img src="./src/assets/icons/Next_ui.svg" alt="Next_ui"
+                                class="drop-shadow-md cursor-pointer" width="20">
+                            <div class="tooltip group-hover/skillIcons:inline hidden">Next Ui </div>
+                        </span>
+                        <!-- <span>GitHub, Next UI, Tailwind CSS, AI, Vs Code</span> -->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="min-h-screen w-screen flex flex-col items-center">
+        <div class="container mx-auto mt-12 min-h-[90vh] items-center z-[100] backdrop-blur-lg bg-[#fffffe59] flex flex-col overflow-hidden p-4 md:p-12  gap-4">
+            <h2 class="flex font-urdu pr--text text-[2rem] font-bold">Projects</h2>
+            <!-- projects grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full h-full grid-rows-auto gap-4">
+                <!-- Project items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- contact us  -->
+    <section id="contact" class="h-auto w-screen flex flex-col items-center">
+        <div
+            class="container mx-auto mt-12 h-full justify-center items-center z-[100] backdrop-blur-lg bg-[#fffffe59] flex flex-col overflow-hidden p-4 md:p-12 gap-6"> 
+            
+            <h2 class="flex font-urdu pr--text text-[2rem] font-bold">Contact us</h2>
+            <div class="grid md:grid-cols-[1fr_,_1fr_,_2px_,_1fr_,_1fr] md:grid-rows-1 grid-rows-[_1fr_,_2px_,_1fr_]">
+
+                <!-- <form
+                class="col-span-2 w-full"
+                action="https://formspree.io/f/xnnarqqa"
+                method="POST"
+              > -->
+                <form
+                class="col-span-2 w-full"
+              >
+                <label>
+                  Email:
+                  <input type="email" name="email" class="focus:outline-none placeholder:text-gray-400 text-black p-2 font-medium" placeholder="Enter your email  . . ."  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+                </label>
+                <label>
+                  Message:
+                  <textarea name="message" class="focus:outline-none placeholder:text-gray-400 text-black p-2 font-medium" placeholder="Enter your message . . . "  required></textarea>
+                </label>
+                <div class="flex w-full justify-end">
+
+                    <button type="submit">Send</button>
+                </div>
+              </form>
+
+              <!-- or -->
+              <div class="col-span-1 md:h-full w-80 md:w-auto my-4 md:my-0 md:mx-4 grid grid-rows-1 md:grid-cols-1 grid-cols-[1fr_,_20px_,1fr] md:grid-rows-[1fr_,_20px_,1fr] place-items-center">
+<div class="md:w-[1px] w-full md:h-full h-[1px] bg-black"></div>
+<span class="or">
+    or
+</span>
+<div class="md:w-[1px] w-full md:h-full h-[1px] bg-black"></div>
+              </div>
+              <!-- social btns  -->
+              <div class="btns col-span-2 flex justify-center items-end flex-col gap-4">
+
+                <a href="mailto:hy.abdulrahman2@gmail.com" class="flex w-full md:w-[90%]  justify-center items-center px-4 py-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i> Email
+                </a>
+        
+                <!-- GitHub Button -->
+                <a href="https://github.com/code-abdulrehman" target="_blank" class="flex w-full md:w-[90%] justify-center items-center px-4 py-2 bg-purple-800 text-white rounded-md shadow-md hover:bg-purple-900 transition duration-300">
+                    <i class="fab fa-github mr-2"></i> GitHub
+                </a>
+        
+                <!-- LinkedIn Button -->
+                <a href="https://www.linkedin.com/in/abdulrehman62" target="_blank" class="flex w-full md:w-[90%] justify-center items-center px-4 py-2 bg-sky-700 text-white rounded-md shadow-md hover:bg-sky-800 transition duration-300">
+                    <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+
+            </div>
+    </section>
+
+
+
+</body>
+<script src="./src/js/anime.min.js"></script>
+<script src="./src/js/bg-boxes.js"></script>
+<script src="./src/js/sidebar_gsap_tl.js"></script>
+<script src="./src/js/projects.js"></script>
+
+
+
+
+</script>
+
+</html>
