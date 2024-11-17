@@ -1,5 +1,4 @@
 
-        function calculateDifference() {
             const outputElement = document.querySelector('.startAt');
             
             try {
@@ -37,4 +36,4 @@
             } catch (error) {
                 outputElement.textContent = error.message;
             }
-        }
+      
