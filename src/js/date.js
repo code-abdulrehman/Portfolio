@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!output) output = '0 days';
 
         // Display the result
-        outputElement.textContent = `Difference: ${output}`;
+        outputElement.textContent = `${output}`;
     } catch (error) {
         outputElement.textContent = error.message;
     }
