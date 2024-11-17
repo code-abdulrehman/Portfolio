@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     try {
         // Parse the input date
-        const inputDate = new Date("April 20, 2024");
-        if (isNaN(inputDate)) throw new Error("Invalid date format");
+        const inputDate = new Date("March 20, 2024");
+        if (isNaN(inputDate)) throw new Error(" - - ");
 
         // Get the current date
         const currentDate = new Date();

@@ -10,10 +10,13 @@
 :root {
     --primary: #A23C43;
     --dark-primary: #85292f;
+    --light-primary: #10002c;
     --black: #222222;
     --light: #fdfdfdda;
     --orange:#eb8d21c5;
     --secondry: #40e2c4da;
+    --main-bg: #ffdd9e71;
+    --dark-main-bg: #10002c;
    }
 ::selection{
     color: var(--light);
@@ -26,7 +29,9 @@
 
      
 body{
-    overflow-x: hidden;background: #ffdd9e71;
+    overflow-x: hidden;
+    /* background: var(--main-bg); */
+    background: linear-gradient(123deg ,var(--dark-primary), var(--main-bg));
 }
 
 /* main bg  */
@@ -60,6 +65,9 @@ header {
  }
  .pr--bg{
     background: linear-gradient(var(--dark-primary), var(--primary));
+ }
+ body.dark .pr--bg{
+    background: linear-gradient(var(--light-primary), var(--primary));
  }
  section .container div .p,
  section .container div p{
@@ -117,3 +125,54 @@ header {
    transition: background-color 0.3s ease;
    margin-top: 10px;
  }
+b.font-urdu {
+   text-shadow: 0.1px 0.2px 0.3px var(--dark-primary);
+}
+body.dark b.font-urdu {
+   text-shadow: 0.1px 0.2px 0.3px var(--light-primary);
+}
+
+ .theme-toggle {
+   position: absolute;
+   z-index: 200; /* Ensure it appears above other content */
+}
+
+#theme-toggle-btn {
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#theme-toggle-btn i {
+   transition: color 0.3s ease;
+}
+body .fa-sun{
+   color: var(--light-primary);
+}
+/* Default light theme (already present in your CSS) */
+
+/* Dark theme styles */
+body.dark{
+   /* background: var(--dark-main-bg); */
+   background: linear-gradient(123deg ,var(--light-primary), var(--light-primary), var(--primary));
+   color: #fff;
+}
+body.dark .p {
+   color: var(--light);
+}
+
+body.dark .pr--text {
+   color: var(--light-primary);
+}
+
+body.dark input[type="email"],
+body.dark textarea {
+   background-color: #333;
+   color: #fff;
+   border-color: var(--primary);
+}
+
+body.dark button[type="submit"] {
+   background-color: var(--primary);
+}
+
+/* Any additional dark theme styles */

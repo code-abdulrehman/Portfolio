@@ -5,17 +5,14 @@
   
     --p: 50%; /* triangle position (0%:left 100%:right) */
     --r: 5px; /* the radius */
-    --c: #85292f;
+    --dark-primary: #85292f;
+    --light-primary: #b13941;
   
     position: absolute;
     /* transform: translateY(-45px); */
     transform: translate(-20px, -58px);
     border-radius: var(--r);
-    /* clip-path: polygon(0 100%,0 0,100% 0,100% 100%,
-      min(100%,var(--p) + var(--b)/2) 100%,
-      var(--p) calc(100% + var(--h)),
-      max(0%  ,var(--p) - var(--b)/2) 100%); */
-    background: var(--c);
+    background: var(--dark-primary);
     border-image: conic-gradient(var(--c) 0 0) fill 0/
       var(--r) calc(100% - var(--p) - var(--b)/2) 0 calc(var(--p) - var(--b)/2)/
       0 0 var(--h) 0;

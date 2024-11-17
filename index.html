@@ -25,9 +25,16 @@
     <section id="about" class="flex flex-col items-center justify-center w-screen min-h-screen m-auto">
         <div
             class="container mx-auto my-10 min-h-[90vh] justify-center items-center z-[100] backdrop-blur-lg bg-[#fffffe59] flex flex-col overflow-hidden p-4 md:p-12 gap-6 pb-2 md:pb-2 lg:pb-2">
+          <!-- Add this inside your container div or wherever suitable -->
+<div class="absolute theme-toggle top-2 right-2">
+    <button id="theme-toggle-btn" class="p-2">
+        <i id="theme-toggle-icon" class="fa-solid fa-sun"></i>
+    </button>
+</div>
+
             <div class="flex w-full justify-center items-center h-[48px]">
                 <h2 class="flex font-urdu pr--text text-[2rem] font-bold">Portfolio</h2> &nbsp;
-                <small class="text-black font-semibold text-sm flex items-center"> v1.0.1</small>
+                <small class="flex items-center text-sm font-semibold p"> v1.0.1</small>
             </div>
 
             <!-- Profile -->
@@ -35,21 +42,17 @@
                 <div class="flex flex-col items-start col-span-5 overflow-hidden text-ellipsis">
                     <span
                         class="font-urdu word pr--text font-bold drop-shadow-md text-[2rem] group/name select-none pr-6">
-<!--                         <span class="inline group-hover/name:hidden">Abdul&nbsp;Rehman -->
+
                         <span class="inline">Abdul&nbsp;Rehman
-                            <a href="https://www.linkedin.com/in/abdulrehman62" target="_blank">
-                                <i class="text-lg text-black fa-solid fa-link"></i>
+                            <a href="https://www.linkedin.com/in/abdulrehman62" target="_blank" class="p">
+                                <i class="text-lg fa fa-solid fa-link"></i>
                             </a>
                         </span>
-<!--                         <span class="hidden group-hover/name:inline font-urdu">عبدالرحمن <a
-                                href="https://www.linkedin.com/in/abdulrehman62" target="_blank">
-                                <i class="hidden text-lg text-black fa-solid fa-link group-hover/name:inline"></i>
-                            </a>
-                        </span> -->
+
                     </span>
-                    <p class="font-sans text-lg">
+                    <p class="font-sans text-lg p">
                         <b class="pr--text font-urdu">#</b> Developer | <b class="pr--text font-urdu">#</b> Self-Learner
-                        <span class="max-md:hidden inline">|<br class="inline md:hidden"></span>
+                        <span class="inline max-md:hidden">|<br class="inline md:hidden"></span>
                         <b class="pr--text font-urdu">#</b> Innovative | <b class="pr--text font-urdu">#</b> Consistent
                     </p>
                 </div>
@@ -64,7 +67,7 @@
                 <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
                     Work
                 </h3>
-                <p class="font-sans text-lg text-black">
+                <p class="font-sans text-lg text-black p">
                     &nbsp;&nbsp;&nbsp;&nbsp; I am a Junior Frontend Developer at <b
                         class="font-bold font-urdu">Dycoders</b>, where I embarked on my journey <span class="startAt"></span> ago. In this role, I am dedicated to creating dynamic and intuitive web interfaces, utilizing my expertise in front-end technologies to deliver seamless user experiences. I thrive on transforming ideas into visually appealing and functional websites, collaborating with cross-functional teams to ensure innovative solutions are brought to life. 
                 </p>
@@ -97,7 +100,7 @@
                                 College)</b>.
                         </span>
                     </li>
-                    <li class="flex gap-6">
+                    <li class="flex gap-6 p">
                         <b class="overflow-hidden font-bold max-w-48 text-ellipsis">I <i
                                 class="fa-solid fa-heart text-rose-600"></i></b>
                         <span class="overflow-hidden text-ellipsis line-clamp-2">
@@ -113,7 +116,7 @@
                 <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
                     Experience
                 </h3>
-                <ul class="font-sans text-lg text-black">
+                <ul class="font-sans text-l p">
                     <li class="flex gap-6">
                         <b class="overflow-hidden font-bold max-w-48 text-ellipsis">2024 - Present</b>
                         <span class="overflow-hidden text-ellipsis line-clamp-2">
@@ -128,7 +131,7 @@
                 <h3 class="font-urdu word pr--text drop-shadow-md text-[2rem] underline">
                     Skills
                 </h3>
-                <ul class="text-lg text-black">
+                <ul class="text-lg p">
                     <li class="flex items-center gap-4">
                         <b class="font-bold">Frontend:</b>
                         <span class="group/skillIcons">
@@ -268,6 +271,33 @@
 <script>
     let year = document.getElementsByClassName('year')[0];
     year.innerHTML = new Date().getFullYear();
+</script>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+    const toggleIcon = document.getElementById('theme-toggle-icon');
+    const body = document.body;
+
+    // Check localStorage for theme preference
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    if (currentTheme === 'dark') {
+        body.classList.add('dark');
+        toggleIcon.classList.remove('fa-sun');
+        toggleIcon.classList.add('fa-moon');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        if (body.classList.contains('dark')) {
+            localStorage.setItem('theme', 'dark');
+            toggleIcon.classList.remove('fa-sun');
+            toggleIcon.classList.add('fa-moon');
+        } else {
+            localStorage.setItem('theme', 'light');
+            toggleIcon.classList.remove('fa-moon');
+            toggleIcon.classList.add('fa-sun');
+        }
+    });
 </script>
 
 
