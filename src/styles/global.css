@@ -67,7 +67,7 @@ header {
     background: linear-gradient(var(--dark-primary), var(--primary));
  }
  body.dark .pr--bg{
-    background: linear-gradient(var(--light-primary), var(--primary));
+    background: linear-gradient(123deg ,var(--light-primary), var(--light-primary), #42877b);
  }
  section .container div .p,
  section .container div p{
@@ -138,9 +138,15 @@ body.dark b.font-urdu {
 }
 
 #theme-toggle-btn {
+    outline:none;
    cursor: pointer;
    transition: background-color 0.3s ease;
 }
+button:focus,
+button:active {
+    outline:none;
+    border:0;
+ }
 
 #theme-toggle-btn i {
    transition: color 0.3s ease;
@@ -153,7 +159,7 @@ body .fa-sun{
 /* Dark theme styles */
 body.dark{
    /* background: var(--dark-main-bg); */
-   background: linear-gradient(123deg ,var(--light-primary), var(--light-primary), var(--primary));
+   background: linear-gradient(123deg ,var(--light-primary), var(--light-primary), #42877b);
    color: #fff;
 }
 body.dark .p {
