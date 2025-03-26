@@ -10,14 +10,12 @@ import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 import ReactHtmlParser from "react-html-parser";
 import { Loading } from "@/components/ui/loading";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
 };
-interface ReactHtmlParser {
-  description: string;
-}
 
 export default function Page() {
   return (
@@ -122,7 +120,10 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  <div>{ReactHtmlParser(work.description)}</div>
+                  <div>
+                  {ReactHtmlParser(work.description) as ReactNode}
+
+                  </div>
                 </CardContent>
               </Card>
             );
