@@ -26,7 +26,7 @@ function calculateMonthYearDiff(startDateStr: any) {
   let monthWord = monthsRemaining === 1 ? "month" : "months";
   let yearWord = years === 1 ? "year" : "years";
 
-  return `${monthsRemaining} ${monthWord} ${years} ${yearWord}`;
+  return `${years} ${yearWord} ${monthsRemaining} ${monthWord}`;
 }
 
 
@@ -40,7 +40,13 @@ export const RESUME_DATA = {
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
   about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS",
   summary:
-    `As a front-end developer with over ${incrementedDate} experience working in Web Development, use like static site generator, ReactJs and VueJs, I always improve my knowledge, develop professional skills, have the spirit of the market, learn from the experience and from colleagues to be an IT professional, ethical, good qualities. I intend to become a AI based full-stack developer in the future. Applying experience in programming skills and understanding of the technologies learned to be an employee contributes and brings a lot of value to the Company.`,
+  `As a front-end developer with over ${incrementedDate}  of experience in web development, skilled in static site generators, ReactJS, and VueJS, I am constantly improving my knowledge and developing professional skills. I stay updated with market trends, learn from my experiences and colleagues, and always strive to be an ethical IT professional with strong qualities.
+
+My future goal is to become a Full-Stack Developer with expertise in AI and Machine Learning technologies, contributing to innovative and impactful projects. I aim to apply my programming skills and technological understanding to create products that generate more opportunities for people and bring significant value to the company.
+
+In the long term, my vision is not limited to becoming a founder or CEO. My focus is on continuous growth, developing products, and scaling to the next level — creating meaningful solutions that empower people and open new possibilities in the tech industry.
+
+`,
   avatarUrl:
     "https://media.licdn.com/dms/image/v2/D4E03AQEVSpz8rIP07A/profile-displayphoto-shrink_200_200/B4EZWvZR1IHUAk-/0/1742404397312?e=1748476800&v=beta&t=tm2Cba_LryEpKVtOfS1CmiKFAqAKDYIWC1YIGjUheLI",
   contact: {
