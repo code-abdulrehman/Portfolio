@@ -73,12 +73,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+  
 }
 
 .print-force-new-page {
   page-break-before: always;
 }
 
-::selection {
-  @apply bg-primary text-primary-foreground;
-}
