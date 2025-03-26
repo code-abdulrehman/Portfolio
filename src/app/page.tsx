@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
 };
+interface ReactHtmlParser {
+  description: string;
+}
 
 export default function Page() {
   return (
@@ -165,9 +168,7 @@ export default function Page() {
                   description={project.description}
                   tags={project.techStack}
                   link={"link" in project ? project.link.href : undefined}
-                  condition={
-                    "condition" in project ? project.condition : null
-                  }
+                  condition={"condition" in project ? project.condition : undefined}
                 />
               );
             })}
