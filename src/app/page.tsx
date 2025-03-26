@@ -11,7 +11,7 @@ import { ProjectCard } from "@/components/project-card";
 import ReactHtmlParser from "react-html-parser";
 import { Loading } from "@/components/ui/loading";
 import { ReactNode } from "react";
-
+import parse from 'html-react-parser';
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
@@ -121,7 +121,7 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   <div>
-                  {ReactHtmlParser(work.description) as ReactNode}
+                  {parse(work.description)}
 
                   </div>
                 </CardContent>
