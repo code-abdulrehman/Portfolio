@@ -115,7 +115,6 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
       <>
       <div className="absolute inset-0 bg-[#ffffffd7] backdrop-blur-sm rounded-lg z-100 flex flex-col items-center justify-center">
       <p className="text-sm text-muted-foreground">
-          <br />
           {condition.description ? condition.description : ""}
         </p>
         <p className="text-sm text-muted-foreground">
