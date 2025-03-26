@@ -30,7 +30,7 @@ function calculateMonthYearDiff(startDateStr: any) {
 }
 
 
-const incrementedDate = calculateMonthYearDiff("2feb 2023"); 
+const incrementedDate = calculateMonthYearDiff("2feb 2023");
 
 export const RESUME_DATA = {
   name: "Abdul Rehman ",
@@ -40,7 +40,7 @@ export const RESUME_DATA = {
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
   about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS",
   summary:
-  `As a front-end developer with over ${incrementedDate}  of experience in web development, skilled in static site generators, ReactJS, and VueJS, I am constantly improving my knowledge and developing professional skills. I stay updated with market trends, learn from my experiences and colleagues, and always strive to be an ethical IT professional with strong qualities.
+    `As a front-end developer with over ${incrementedDate}  of experience in web development, skilled in static site generators, ReactJS, and VueJS, I am constantly improving my knowledge and developing professional skills. I stay updated with market trends, learn from my experiences and colleagues, and always strive to be an ethical IT professional with strong qualities.
 
 My future goal is to become a Full-Stack Developer with expertise in AI and Machine Learning technologies, contributing to innovative and impactful projects. I aim to apply my programming skills and technological understanding to create products that generate more opportunities for people and bring significant value to the company.
 
@@ -74,14 +74,14 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
     {
       school: "Hasilpur Science College",
       degree: "Intermediate, Computer Science",
-      start: "Mar 2024",
+      start: "Mar. 2024",
       end: "Present",
-    },  
+    },
     {
       school: "Govt. high School, Hasilpur",
       degree: "Matric, Mathematics and Computer Science",
-      start: "Aug 2022",
-      end: "Mar 2024",
+      start: "Aug. 2022",
+      end: "Mar. 2024",
     },
   ],
   work: [
@@ -202,7 +202,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "Tailwind",
         "Terminal",
       ],
-        description: "A chatbot with LLM. With custom API.",
+      description: "A chatbot with LLM. With custom API.",
       link: {
         label: "ChatAI",
         href: "https://chatai-ar.vercel.app/",
@@ -218,7 +218,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "Tailwind",
         "Gemini",
       ],
-        description: "A chatbot with GEMINI API.",
+      description: "A chatbot with GEMINI API.",
       link: {
         label: "Vite AI (Gemini)",
         href: "https://vite-ai2.vercel.app/",
@@ -233,7 +233,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "Multi-LLM",
         "Tailwind",
       ],
-        description: "A Saas solution for Organization management.",
+      description: "A Saas solution for Organization management.",
       link: {
         label: "Schedsaas",
         href: "https://schedsaas.vercel.app/",
