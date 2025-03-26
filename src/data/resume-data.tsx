@@ -38,7 +38,7 @@ export const RESUME_DATA = {
   location: "Hasilpur, Punjab, Pakistan",
   locationLink:
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
-  about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS",
+  about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS and AI",
   summary:
     `As a front-end developer with over ${incrementedDate}  of experience in web development, skilled in static site generators, ReactJS, and VueJS, I am constantly improving my knowledge and developing professional skills. I stay updated with market trends, learn from my experiences and colleagues, and always strive to be an ethical IT professional with strong qualities.
 
