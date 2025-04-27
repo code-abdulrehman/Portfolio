@@ -224,6 +224,22 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         href: "https://vite-ai2.vercel.app/",
       },
     },
+     {
+      title: "Daily Quotes",
+      techStack: [
+        "Side Project",
+        "Automation",
+        "Cron jobs",
+        "API",
+        "Tailwind",
+        "HTML",
+      ],
+      description: "Quotes have the power to inspire.",
+      link: {
+        label: "Daily Quotes",
+        href: "https://blockquote-flax.vercel.app/",
+      },
+    },
     {
       title: "Web-IDE",
       techStack: [
@@ -241,7 +257,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
       condition: {
         status: "In Progress",
         start: "Apr 2025",
-        end: "15june 2025",
+        end: "15jun 2025",
         description: "Coming Soon",
       },
     },
