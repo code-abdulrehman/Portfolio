@@ -48,7 +48,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
 
 `,
   avatarUrl:
-    https://media.licdn.com/dms/image/v2/D4E03AQEVSpz8rIP07A/profile-displayphoto-shrink_200_200/B4EZWvZR1IHUAk-/0/1742404397312?e=1755734400&v=beta&t=aTdaLJ7VGgxJZVEgJIpkgpTxoSzTQPr0aEE7JTwuVNg",
+    "https://media.licdn.com/dms/image/v2/D4E03AQEVSpz8rIP07A/profile-displayphoto-shrink_200_200/B4EZWvZR1IHUAk-/0/1742404397312?e=1755734400&v=beta&t=aTdaLJ7VGgxJZVEgJIpkgpTxoSzTQPr0aEE7JTwuVNg",
   contact: {
     email: "code.abdulrehman@gmail.com",
     // tel: "+923377916802",
