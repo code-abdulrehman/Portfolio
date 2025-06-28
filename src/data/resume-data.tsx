@@ -152,7 +152,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
       techStack: [
         "Astro.js",
         "React.js",
-        "Gemni",
+        "Gemini",
         "Tailwind",
       ],
       description: "A simple and modern blogging platform.",
