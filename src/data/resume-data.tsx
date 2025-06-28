@@ -148,6 +148,20 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
   ],
   projects: [
     {
+      title: "Thoggo",
+      techStack: [
+        "Astro.js",
+        "React.js",
+        "Gemni",
+        "Tailwind",
+      ],
+      description: "A simple and modern blogging platform.",
+      link: {
+        label: "Thoggo",
+        href: "https://thoggo.vercel.app/",
+      },
+    }, 
+        {
       title: "Putter Hosting",
       techStack: [
         "Side Project",
