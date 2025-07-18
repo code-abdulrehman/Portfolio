@@ -271,7 +271,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
       condition: {
         status: "In Progress",
         start: "Apr 2025",
-        end: "15jul 2025",
+        end: "14aug 2025",
         description: "Coming Soon",
       },
     },
