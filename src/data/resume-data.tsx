@@ -263,10 +263,10 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "Tailwind",
         "Themes",
       ],
-      description: "A multi-theme audio player with uploads, inspired by SoundCloud.",
+      description: "A multi-theme audio player with uploads.",
       link: {
         label: "SoundCloud",
-        href: "sound-cloud-01.vercel.app",
+        href: "https://sound-cloud-01.vercel.app/",
       },
     },
     {
