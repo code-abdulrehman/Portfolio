@@ -255,6 +255,21 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
       },
     },
     {
+      title: "SoundCloud",
+      techStack: [
+        "Audio player",
+        "react",
+        "uploads",
+        "Tailwind",
+        "Themes",
+      ],
+      description: "A multi-theme audio player with uploads, inspired by SoundCloud.",
+      link: {
+        label: "SoundCloud",
+        href: "sound-cloud-01.vercel.app",
+      },
+    },
+    {
       title: "PGPT",
       techStack: [
         "Agents",
