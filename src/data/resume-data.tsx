@@ -148,6 +148,22 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
   ],
   projects: [
     {
+      title: "Sci-Fi Dashboard",
+      techStack: [
+        "React.js",
+        "TailwindCSS",
+        "zag-js",
+        "gsap",
+        "motion",
+      ],
+      description: "A futuristic UI inspired by sci-fi movies, featuring a military-style dashboard and data systems.",
+      keywords: ["sci-fi", "dashboard", "UI", "futuristic", "data visualization"],
+      link: {
+        label: "Sci-Fi Dashboard",
+        href: "https://sci-fi-dashboard.vercel.app/",
+      },
+    },
+    {
       title: "Thoggo",
       techStack: [
         "Astro.js",
@@ -185,7 +201,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "HTML5",
         "Tailwind",
       ],
-      description: "React based E-commerce website.",
+      description: "React-based E-commerce website.",
       link: {
         label: "E-Bag",
         href: "https://e-bag.vercel.app/",
@@ -200,7 +216,7 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "Tailwind",
         "Pagination",
       ],
-      description: "A simple github scroller.",
+      description: "A simple GitHub scroller.",
       link: {
         label: "Github Scroller",
         href: "https://github-scroller.vercel.app/",
