@@ -156,13 +156,29 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
         "gsap",
         "motion",
       ],
-      description: "A futuristic UI inspired by sci-fi movies, featuring a military-style dashboard and data systems.",
+      description: "Military-style sci-fi dashboard with dynamic data visuals.",
       keywords: ["sci-fi", "dashboard", "UI", "futuristic", "data visualization"],
       link: {
         label: "Sci-Fi Dashboard",
         href: "https://sci-fi-dashboard.vercel.app/",
       },
     },
+    {
+  title: "React Chatbot Docs",
+  techStack: [
+    "VuePress",
+    "Markdown",
+    "OpenAI",
+    "Tailwind CSS",
+  ],
+  description: "Build React chatbots with OpenAI — documented with VuePress.",
+      keywords: ["vuepress", "scss", "markdown", "docs", "vercel"],
+  link: {
+    label: "React Chatbot Docs",
+    href: "https://rcvp.vercel.app/",
+  },
+},
+
     {
       title: "Thoggo",
       techStack: [
