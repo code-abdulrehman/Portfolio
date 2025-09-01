@@ -50,7 +50,7 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
   
         if (diff <= 0) {
           clearInterval(interval);
-          setCountdown("Countdown finished!");
+          setCountdown("");
           return;
         }
   
