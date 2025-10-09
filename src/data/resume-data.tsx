@@ -38,7 +38,7 @@ export const RESUME_DATA = {
   location: "Hasilpur, Punjab, Pakistan",
   locationLink:
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
-  about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS, and AI",
+  about: "Frontend Developer focused on ReactJS, VueJS, NextJS, and AI",
   summary: `I’m a frontend developer with over ${incrementedDate} of hands-on experience in web development. 
   I specialize in ReactJS, NextJS, VueJS, and modern UI design while currently expanding my skills in the MERN stack. 
   I enjoy building clean, responsive, and high-performing web applications that deliver great user experiences. 
@@ -95,13 +95,10 @@ export const RESUME_DATA = {
       - Responsibilities:<br/>
           <div class="ml-5">
             • Develop and fix the application’s defect base on requirements<br/> 
-            • Develop responsive web apps.<br/>
-            • Bug fixes.<br/>
           </div>
       - Technologies: <br/>
           <div class="ml-5">
-            • React, Vue, Next.js, Tailwind, PrimeVue <br/>
-            • React(React-hooks), Vue(Vue-router), i18next, Redux(Redux-toolkit), Pinia <br/>
+            • React, Vue, Next.js, Live_view, Tailwind, PrimeVue <br/>
           </div>
       - Tools control: Git, Postman, Jira, Figma, VSCode, Cursor, Insomnia, etc.
       `,
@@ -119,13 +116,11 @@ export const RESUME_DATA = {
       - Responsibilities:<br/>
           <div class="ml-5">
             • Grow my skills in the static site.<br/>
-            • Explore new technologies.<br/>
             • Social Media Marketing:
             </div>
             - Technologies: <br/>
             <div class="ml-5">
-            • HTML, CSS, JavaScript <br/>
-            • Facebook ads<br/> 
+            • HTML, CSS, JavaScript, Facebook ads<br/> 
           </div>
       - Tools control: VSCode, Excel, Meta Ads Manager, etc.
       `,
@@ -136,7 +131,7 @@ export const RESUME_DATA = {
     "Css",
     "JavaScript",
     "OpenAI SDK",
-    "React/ Vue/ Next.js",
+    "React/ Vue/ Next.js/ Astro.js",
     "Redux/ ReduxToolkit /Pinia",
     "PrimeVue",
     "Tailwind/ Bootstrap/ CSS/ SCSS /LESS",
