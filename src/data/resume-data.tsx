@@ -39,14 +39,11 @@ export const RESUME_DATA = {
   locationLink:
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
   about: "Software Engineer/Frontend Developer focused on ReactJS, VueJS, NextJS, and AI",
-  summary:
-    `As a front-end developer with over ${incrementedDate}  of experience in web development, skilled in static site generators, ReactJS, and VueJS, I am constantly improving my knowledge and developing professional skills. I stay updated with market trends, learn from my experiences and colleagues, and always strive to be an ethical IT professional with strong qualities.
-
-My future goal is to become a Full-Stack Developer with expertise in AI and Machine Learning technologies, contributing to innovative and impactful projects. I aim to apply my programming skills and technological understanding to create products that generate more opportunities for people and bring significant value to the company.
-
-In the long term, my vision is not limited to becoming a founder or CEO. My focus is on continuous growth, developing products, and scaling to the next level — creating meaningful solutions that empower people and open new possibilities in the tech industry.
-
-`,
+  summary: `I’m a frontend developer with over ${incrementedDate} of hands-on experience in web development. 
+  I specialize in ReactJS, NextJS, VueJS, and modern UI design while currently expanding my skills in the MERN stack. 
+  I enjoy building clean, responsive, and high-performing web applications that deliver great user experiences. 
+  My focus is on learning new technologies, improving my code quality, and developing real-world projects that solve practical problems.`,
+  
   avatarUrl:
     "https://avatars.githubusercontent.com/u/184140412?v=4",
   contact: {
@@ -147,6 +144,20 @@ In the long term, my vision is not limited to becoming a founder or CEO. My focu
     "Firebase",
   ],
   projects: [
+    {
+      title: "AST",
+      techStack: [
+        "React.js",
+        "TailwindCSS",
+        "Vue.js",
+      ],
+      description: "ASTELECOM is a leading electrical company in Pakistan.",
+      keywords: ["ASTELECOM", "Electrical", "Company", "Pakistan"],
+      link: {
+        label: "ASTELECOM",
+        href: "https://astelecom.store/",
+      },
+    },
     {
       title: "Sci-Fi Dashboard",
       techStack: [
