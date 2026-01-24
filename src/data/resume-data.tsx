@@ -144,13 +144,30 @@ export const RESUME_DATA = {
       techStack: [
         "React.js",
         "TailwindCSS",
+        "Dashboard",
+        "SEO",
         "Vue.js",
       ],
-      description: "ASTELECOM is a leading electrical company in Pakistan.",
+      description: "ASTELECOM is a leading electrical company in Pakistan. ",
       keywords: ["ASTELECOM", "Electrical", "Company", "Pakistan"],
       link: {
         label: "ASTELECOM",
         href: "https://astelecom.store/",
+      },
+    },
+     {
+      title: "Playbacks",
+      techStack: [
+        "React.js",
+        "TailwindCSS",
+        "AI",
+        "Rich IDE's",
+      ],
+      description: "Record and replay coding sessions with AI insights for learning and debugging.",
+      keywords: ["Ai", "EduTech", "Playbacks", "Coding"],
+      link: {
+        label: "Playbacks",
+        href: "https://playbacks.imabdulrehman.site/",
       },
     },
     {
@@ -162,7 +179,7 @@ export const RESUME_DATA = {
         "gsap",
         "motion",
       ],
-      description: "Military-style sci-fi dashboard with dynamic data visuals.",
+      description: "Military-style sci-fi dashboard with dynamic data visuals. ",
       keywords: ["sci-fi", "dashboard", "UI", "futuristic", "data visualization"],
       link: {
         label: "Sci-Fi Dashboard",
@@ -170,7 +187,7 @@ export const RESUME_DATA = {
       },
     },
     {
-  title: "React Chatbot Docs",
+  title: "Chatbot Documentation",
   techStack: [
     "VuePress",
     "Markdown",
@@ -215,33 +232,32 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "E-Bag",
+      title: "Ledgeron",
       techStack: [
-        "Side Project",
+        "Mobile-first",
         "React",
-        "React-router",
+        "PWA",
         "HTML5",
         "Tailwind",
       ],
-      description: "React-based E-commerce website.",
+      description: "Offline-first daily expense recorder.",
       link: {
-        label: "E-Bag",
-        href: "https://e-bag.vercel.app/",
+        label: "Ledgeron",
+        href: "https://ledgeron.imabdulrehman.site/",
       },
     },
     {
-      title: "Github Scroller",
+      title: "PPost",
       techStack: [
-        "Side Project",
         "React",
-        "HTML5",
-        "Tailwind",
-        "Pagination",
+        "Canvas",
+        "AI",
+        "Backend",
       ],
-      description: "A simple GitHub scroller.",
+      description: "Design social media and marketing graphics effortlessly.",
       link: {
-        label: "Github Scroller",
-        href: "https://github-scroller.vercel.app/",
+        label: "PPost",
+        href: "https://ppost.vercel.app/app",
       },
     },
     {
@@ -261,38 +277,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Vite AI (Gemini)",
-      techStack: [
-        "Side Project",
-        "Next.js",
-        "AI",
-        "LLM",
-        "Tailwind",
-        "Gemini",
-      ],
-      description: "A chatbot with GEMINI API.",
-      link: {
-        label: "Vite AI (Gemini)",
-        href: "https://vite-ai2.vercel.app/",
-      },
-    },
-     {
-      title: "Daily Quotes",
-      techStack: [
-        "Side Project",
-        "Automation",
-        "Cron jobs",
-        "API",
-        "Tailwind",
-        "HTML",
-      ],
-      description: "Quotes have the power to inspire.",
-      link: {
-        label: "Daily Quotes",
-        href: "https://blockquote-flax.vercel.app/",
-      },
-    },
-    {
       title: "SoundCloud",
       techStack: [
         "Audio player",
@@ -308,23 +292,40 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "PGPT",
+      title: "Project Archive",
+      techStack: [
+        "React",
+        "Vue",
+        "API",
+        "Express",
+        "Phoenix",
+        "DBMS",
+        "MERN/PERN",
+      ],
+      description: "A centralized archive of my side projects and experiments with detailed tech stacks.",
+      link: {
+        label: "Project Archive",
+        href: "https://projects.imabdulrehman.site/",
+      },
+    },
+    {
+      title: "TeleClinic",
       techStack: [
         "Agents",
         "AI",
-        "React component",
-        "Multi-LLM",
-        "OpenAI",
+        "React",
+        "Real-time",
+        "Express",
       ],
-      description: "This is designed to make react components faster.",
+      description: "An AI-powered telemedicine platform for real-time doctor consultations.",
       link: {
-        label: "PGPT",
-        href: "https://p-gpt-bots.vercel.app/",
+        label: "TeleClinic",
+        href: "https://teleClinic.imabdulrehman.site",
       },
       condition: {
         status: "In Progress",
-        start: "Apr 2025",
-        end: "10aug 2025",
+        start: "Dec 2025",
+        end: "10mar 2026 ",
         description: "Coming Soon",
       },
     },
