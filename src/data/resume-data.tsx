@@ -279,8 +279,8 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
         "SEO",
         "Vue.js",
       ],
-      description: "ASTELECOM is a leading electrical company in Pakistan. ",
-      keywords: ["ASTELECOM", "Electrical", "Company", "Pakistan"],
+      description: "ASTELECOM is a leading electroonics company. ",
+      keywords: ["ASTELECOM", "Electronics", "Company", "Pakistan"],
       link: {
         label: "ASTELECOM",
         href: "https://astelecom.store/",
