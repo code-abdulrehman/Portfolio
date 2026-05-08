@@ -7,11 +7,10 @@ import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { ProjectCard } from "@/components/project-card";
-import ReactHtmlParser from "react-html-parser";
 import { Loading } from "@/components/ui/loading";
-import { ReactNode } from "react";
 import parse from 'html-react-parser';
+import { ProjectsSection } from "@/components/projects-section";
+import { CertificationsSection } from "@/components/certifications-section";
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
   description: RESUME_DATA.summary,
@@ -158,23 +157,12 @@ export default function Page() {
           </div>
         </Section>
 
-         <Section className="print-force-new-page scroll-mb-16 print:hidden">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                  condition={"condition" in project ? project.condition : undefined}
-                />
-              );
-            })}
-          </div>
-        </Section> 
+        {"certifications" in RESUME_DATA ? (
+          <CertificationsSection certifications={RESUME_DATA.certifications} defaultCount={3} />
+        ) : null}
+
+        {/* Default: 2 full rows (4 items) + half row peek */}
+        <ProjectsSection projects={RESUME_DATA.projects} defaultCount={4} title="Projects" />
       </section>
 
       <CommandMenu

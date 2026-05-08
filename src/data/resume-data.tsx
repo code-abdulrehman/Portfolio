@@ -4,27 +4,28 @@ import { GitHubIcon } from "@/components/icons/GitHubIcon";
 import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 import { WhatsappIcon } from "@/components/icons/Whatsapp";
 
-function calculateMonthYearDiff(startDateStr: any) {
+function calculateMonthYearDiff(startDateStr: string) {
   const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
   const match = startDateStr.toLowerCase().match(/(\d+)([a-z]+)\s+(\d{4})/);
   if (!match) return "Invalid date format. Use '2feb 2023'";
 
-  let [_, day, monthStr, year] = match;
-  let monthIndex = months.indexOf(monthStr);
+  const [, day, monthStr, year] = match;
+  const monthIndex = months.indexOf(monthStr);
   if (monthIndex === -1) return "Invalid month name";
 
   // Create start date
-  let startDate = new Date(parseInt(year), monthIndex, parseInt(day));
-  let today = new Date();
+  const startDate = new Date(parseInt(year, 10), monthIndex, parseInt(day, 10));
+  const today = new Date();
 
   // Calculate difference in months and years
-  let totalMonths = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+  const totalMonths =
+    (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
 
-  let years = Math.floor(totalMonths / 12);
-  let monthsRemaining = totalMonths % 12;
-  let monthWord = monthsRemaining === 1 ? "month" : "months";
-  let yearWord = years === 1 ? "year" : "years";
+  const years = Math.floor(totalMonths / 12);
+  const monthsRemaining = totalMonths % 12;
+  const monthWord = monthsRemaining === 1 ? "month" : "months";
+  const yearWord = years === 1 ? "year" : "years";
 
   return `${years} ${yearWord} ${monthsRemaining} ${monthWord}`;
 }
@@ -38,11 +39,11 @@ export const RESUME_DATA = {
   location: "Hasilpur, Punjab, Pakistan",
   locationLink:
     "https://www.google.com/maps/place/Hasilpur,+Pakistan/@29.6962368,72.5534141,16z/data=!4m15!1m8!3m7!1s0x393c57be4bb51659:0xc707deab03084110!2sHasilpur,+Pakistan!3b1!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3!3m5!1s0x393c57be4bb51659:0xc707deab03084110!8m2!3d29.6970451!4d72.5537974!16zL20vMDkyaGg3?entry=ttu&g_ep=EgoyMDI1MDMyMy4wIKXMDSoASAFQAw%3D%3D",
-  about: "Frontend Developer focused on ReactJS, VueJS, NextJS, and AI",
-  summary: `I’m a frontend developer with over ${incrementedDate} of hands-on experience in web development. 
-  I specialize in ReactJS, NextJS, VueJS, and modern UI design while currently expanding my skills in the MERN stack. 
-  I enjoy building clean, responsive, and high-performing web applications that deliver great user experiences. 
-  My focus is on learning new technologies, improving my code quality, and developing real-world projects that solve practical problems.`,
+  about: "Frontend + Full-stack Engineer building fast SaaS & AI-powered web apps",
+  summary: `Frontend Engineer with ${incrementedDate} of hands-on experience shipping modern web products.
+I build responsive, SEO-friendly interfaces with React, Next.js and Vue, and I care about performance, accessibility, and clean design systems.
+I also build full-stack features with Node/Express and Phoenix LiveView, working with databases and APIs.
+My mindset is systems-first (reliability, clarity, and scalable architecture) and I’m growing into product ownership: understand the problem, propose the solution, and deliver end-to-end.`,
   
   avatarUrl:
     "https://avatars.githubusercontent.com/u/184140412?v=4",
@@ -57,7 +58,7 @@ export const RESUME_DATA = {
       },
       {
         name: "Whatsapp",
-        url: "https://wa.me/923377916802",
+        url: "https://wa.me/923238766737",
         icon: WhatsappIcon,
       },
       {
@@ -94,11 +95,13 @@ export const RESUME_DATA = {
       - Team size: 8+<br/>
       - Responsibilities:<br/>
           <div class="ml-5">
-            • Develop and fix the application’s defect base on requirements<br/> 
+            • Build and ship UI features based on requirements and user feedback<br/>
+            • Fix bugs, improve UX flows, and maintain reusable components<br/>
+            • Collaborate with design/product to estimate work and deliver iteratively<br/>
           </div>
       - Technologies: <br/>
           <div class="ml-5">
-            • React, Vue, Next.js, Live_view, Tailwind, PrimeVue <br/>
+            • React, Vue, Next.js, LiveView, Tailwind, PrimeVue <br/>
           </div>
       - Tools control: Git, Postman, Jira, Figma, VSCode, Cursor, Insomnia, etc.
       `,
@@ -115,8 +118,8 @@ export const RESUME_DATA = {
       - Team size: 1<br/>
       - Responsibilities:<br/>
           <div class="ml-5">
-            • Grow my skills in the static site.<br/>
-            • Social Media Marketing:
+            • Built landing pages and small business websites (mobile-first, SEO basics)<br/>
+            • Social media + marketing support (Meta Ads) for outreach and lead generation<br/>
             </div>
             - Technologies: <br/>
             <div class="ml-5">
@@ -126,19 +129,147 @@ export const RESUME_DATA = {
       `,
     },
   ],
+  stats: {
+    period: "Feb–May 2026",
+    totalRequests: 2415,
+    topRegions: [
+      { region: "Washington, D.C., USA", code: "iad1", requests: 1126, share: "46.6%" },
+      { region: "Frankfurt, Germany", code: "fra1", requests: 220, share: "9.1%" },
+      { region: "Mumbai, India", code: "bom1", requests: 212, share: "8.8%" },
+      { region: "San Francisco, USA", code: "sfo1", requests: 186, share: "7.7%" },
+      { region: "Singapore", code: "sin1", requests: 179, share: "7.4%" },
+    ],
+  },
+  certifications: [
+    {
+      name: "Deloitte Australia Technology Job Simulation (Forage)",
+      issuer: "Forage",
+      issued: "May 2026",
+      credentialId: "kxdjm9AXDCa5WyG6f",
+      bullets: [
+        "Completed a job simulation involving development and coding",
+        "Wrote a proposal for creating a dashboard",
+      ],
+    },
+    {
+      name: "Claude 101",
+      issuer: "Anthropic Education",
+      issued: "Apr 2026",
+      credentialId: "rq3hsky7a4dn",
+      bullets: ["Learned Claude fundamentals and prompting patterns", "Applied LLMs to real coding workflows"],
+    },
+    {
+      name: "Claude Code in Action",
+      issuer: "Anthropic Education",
+      issued: "Apr 2026",
+      credentialId: "jr9feecw6pc3",
+      bullets: ["Practiced agent-style coding workflows", "Improved debugging and refactoring with AI assistance"],
+    },
+    {
+      name: "Claude Code 101",
+      issuer: "Anthropic Education",
+      issued: "Apr 2026",
+      credentialId: "jr9feecw6pc3",
+      bullets: ["Learned Claude Code basics for daily development", "Focused on safe, iterative changes and verification"],
+    },
+    {
+      name: "Effective Leadership",
+      issuer: "HP LIFE",
+      issued: "Feb 2026",
+      credentialId: "343cbf68-dc7e-478e-92df-b8e538eee0a3",
+      bullets: ["Built leadership basics: communication, ownership, accountability", "Improved collaboration and decision-making"],
+    },
+    {
+      name: "Introduction to Generative AI",
+      issuer: "AWS Training Online",
+      issued: "Jan 2026",
+      bullets: ["Learned GenAI concepts, use cases, and limitations", "Explored practical applications for product teams"],
+    },
+    {
+      name: "React Native (Beginner)",
+      issuer: "MindLuster",
+      issued: "Dec 2025",
+      credentialId: "17c8f9a0",
+      bullets: ["Built basic mobile UI screens and navigation patterns", "Learned core React Native components and layout"],
+    },
+    {
+      name: "Critical Thinking",
+      issuer: "GCF Global Learning",
+      issued: "Jul 2025",
+      credentialId: "cXyzsBEdTmu3JZXF",
+      bullets: ["Strengthened problem framing and decision-making", "Improved reasoning for product/engineering trade-offs"],
+    },
+    {
+      name: "Web Development Tools Essentials",
+      issuer: "MindLuster",
+      issued: "Mar 2025",
+      credentialId: "6682db53",
+      bullets: ["Learned modern dev tooling and workflows", "Improved productivity with IDE + debugging basics"],
+    },
+    {
+      name: "Front End Development Libraries",
+      issuer: "freeCodeCamp",
+      issued: "Mar 2025",
+      bullets: ["Strengthened React ecosystem fundamentals", "Practiced building UI with modern tooling and CSS utilities"],
+    },
+    {
+      name: "Introduction to Microsoft Excel",
+      issuer: "Coursera",
+      issued: "Feb 2024",
+      credentialId: "Q2UWNVH2DVN8",
+      bullets: ["Worked with spreadsheets for reporting and data organization", "Learned formulas, formatting, and basic analysis"],
+    },
+    {
+      name: "Responsive Web Design",
+      issuer: "freeCodeCamp",
+      issued: "Oct 2023",
+      bullets: ["Built responsive layouts with HTML/CSS", "Learned accessibility basics and mobile-first design"],
+    },
+  ],
   skills: [
-    "Html",
-    "Css",
+    "TypeScript",
     "JavaScript",
-    "OpenAI SDK",
-    "React/ Vue/ Next.js/ Astro.js",
-    "Redux/ ReduxToolkit /Pinia",
+    "React",
+    "Next.js",
+    "Vue",
+    "Tailwind CSS",
     "PrimeVue",
-    "Tailwind/ Bootstrap/ CSS/ SCSS /LESS",
-    "Clerk",
+    "Redux Toolkit / Pinia",
+    "Node.js",
+    "Express",
+    "REST APIs",
+    "PostgreSQL",
+    "MongoDB",
+    "Prisma (basic)",
+    "Phoenix LiveView",
+    "Ecto (basic)",
+    "Auth (OAuth, JWT)",
     "Firebase",
+    "Clerk",
+    "Vercel",
+    "Docker (basic)",
+    "Git & GitHub",
+    "Postman / Insomnia",
   ],
   projects: [
+    {
+      title: "40+ Projects",
+      techStack: ["Portfolio", "Catalog", "Links"],
+      description: "A complete catalog of my projects (company + personal) in one place.",
+      link: {
+        label: "Open projects sheet",
+        href: "https://docs.google.com/spreadsheets/d/1BEQc6yUOHxgZRULBS-7Qg4mZnge5ylxdhpsgHArHTIY/edit?gid=0#gid=0",
+      },
+    },
+    {
+      title: "App Planner",
+      techStack: ["Elixir", "LiveView", "Tailwind", "Product", "Task Tracking"],
+      description: "App planning & product task tracking workspace built with LiveView.",
+      link: {
+        label: "App Planner",
+        href: "https://app-planner.gigalixirapp.com/",
+      },
+    },
     {
       title: "AST",
       techStack: [
@@ -261,22 +392,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "ChatAI",
-      techStack: [
-        "Side Project",
-        "Next.js",
-        "AI",
-        "LLM",
-        "Tailwind",
-        "Terminal",
-      ],
-      description: "A chatbot with LLM. With custom API.",
-      link: {
-        label: "ChatAI",
-        href: "https://chatai-ar.vercel.app/",
-      },
-    },
-    {
       title: "SoundCloud",
       techStack: [
         "Audio player",
@@ -289,23 +404,6 @@ export const RESUME_DATA = {
       link: {
         label: "SoundCloud",
         href: "https://sound-cloud-01.vercel.app/",
-      },
-    },
-    {
-      title: "Project Archive",
-      techStack: [
-        "React",
-        "Vue",
-        "API",
-        "Express",
-        "Phoenix",
-        "DBMS",
-        "MERN/PERN",
-      ],
-      description: "A centralized archive of my side projects and experiments with detailed tech stacks.",
-      link: {
-        label: "Project Archive",
-        href: "https://projects.imabdulrehman.site/",
       },
     },
     {
@@ -325,8 +423,8 @@ export const RESUME_DATA = {
       condition: {
         status: "In Progress",
         start: "Dec 2025",
-        end: "10mar 2026 ",
-        description: "Coming Soon",
+        end: "8aug 2026",
+        description: "Launching soon (countdown)",
       },
     },
   ],

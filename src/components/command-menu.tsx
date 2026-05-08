@@ -51,7 +51,7 @@ export const CommandMenu = ({ links }: Props) => {
                 window.print();
               }}
             >
-              <span>Print</span>
+              <span>Download resume (PDF)</span>
             </CommandItem>
           </CommandGroup>
           <CommandGroup heading="Links">
