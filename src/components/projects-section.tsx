@@ -80,7 +80,7 @@ export function ProjectsSection({
       {/* Screen: interactive preview */}
       <div className="relative print:hidden">
         {!expanded && canToggle ? (
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-14 bg-gradient-to-b from-transparent to-white/90" />
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-14 bg-gradient-to-b from-transparent to-background/90" />
         ) : null}
 
         <div

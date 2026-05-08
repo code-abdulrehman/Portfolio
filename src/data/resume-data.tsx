@@ -48,7 +48,7 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   avatarUrl:
     "https://avatars.githubusercontent.com/u/184140412?v=4",
   contact: {
-    email: "code.abdulrehman@gmail.com",
+    email: "code.abdulrehman+resume@gmail.com",
     // tel: "+923377916802",
     social: [
       {
@@ -263,7 +263,7 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
     },
     {
       title: "App Planner",
-      techStack: ["Elixir", "LiveView", "Tailwind", "Product", "Task Tracking"],
+      techStack: ["Elixir", "LiveView", "Tailwind", "Product",],
       description: "App planning & product task tracking workspace built with LiveView.",
       link: {
         label: "App Planner",
@@ -347,19 +347,19 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
         href: "https://thoggo.vercel.app/",
       },
     }, 
-        {
-      title: "Putter Hosting",
+    {
+      title: "SoundCloud",
       techStack: [
-        "Side Project",
-        "Putter.js",
-        "HTML5",
+        "Audio player",
+        "react",
+        "uploads",
         "Tailwind",
-        "JavaScript",
+        "Themes",
       ],
-      description: "A platform to deploy your website.",
+      description: "A multi-theme audio player with uploads.",
       link: {
-        label: "Self Hosting",
-        href: "https://puter-hosting-app.vercel.app/",
+        label: "SoundCloud",
+        href: "https://sound-cloud-01.vercel.app/",
       },
     },
     {
@@ -371,7 +371,7 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
         "HTML5",
         "Tailwind",
       ],
-      description: "Offline-first daily expense recorder.",
+      description: "Offline-first daily expense recorder. PWA built with React, Vite & Tailwind.",
       link: {
         label: "Ledgeron",
         href: "https://ledgeron.imabdulrehman.site/",
@@ -392,18 +392,17 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
       },
     },
     {
-      title: "SoundCloud",
+      title: "Putter Hosting",
       techStack: [
-        "Audio player",
-        "react",
-        "uploads",
+        "Putter.js",
+        "HTML5",
         "Tailwind",
-        "Themes",
+        "JavaScript",
       ],
-      description: "A multi-theme audio player with uploads.",
+      description: "A platform to deploy your website Static website hosting with Putter.js.",
       link: {
-        label: "SoundCloud",
-        href: "https://sound-cloud-01.vercel.app/",
+        label: "Putter Hosting",
+        href: "https://puter-hosting-app.vercel.app/",
       },
     },
     {
@@ -424,7 +423,7 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
         status: "In Progress",
         start: "Dec 2025",
         end: "8aug 2026",
-        description: "Launching soon (countdown)",
+        description: "Launching soon ",
       },
     },
   ],

@@ -17,9 +17,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  const formatCount = (n: number) => (n >= 40 ? `${n}+` : `${n}`);
+
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+      <section className="mx-auto w-full max-w-2xl space-y-8 bg-background print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -86,7 +88,7 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Work Experience ({RESUME_DATA.work.length})</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -129,7 +131,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold">Education ({RESUME_DATA.education.length})</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -158,11 +160,19 @@ export default function Page() {
         </Section>
 
         {"certifications" in RESUME_DATA ? (
-          <CertificationsSection certifications={RESUME_DATA.certifications} defaultCount={3} />
+          <CertificationsSection
+            certifications={RESUME_DATA.certifications}
+            defaultCount={3}
+            title={`Certifications (${formatCount(RESUME_DATA.certifications.length)})`}
+          />
         ) : null}
 
         {/* Default: 2 full rows (4 items) + half row peek */}
-        <ProjectsSection projects={RESUME_DATA.projects} defaultCount={4} title="Projects" />
+        <ProjectsSection
+          projects={RESUME_DATA.projects}
+          defaultCount={4}
+          title={`Projects (${formatCount(RESUME_DATA.projects.length)})`}
+        />
       </section>
 
       <CommandMenu

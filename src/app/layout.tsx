@@ -47,8 +47,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>{children}</body>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <head>
+        <script
+          // Prevent theme flash by applying before paint
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'system';
+                  var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  var resolved = theme === 'system' ? (systemDark ? 'dark' : 'light') : theme;
+                  document.documentElement.classList.toggle('dark', resolved === 'dark');
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
+      <body>
+        {children}
+      </body>
       <Analytics />
     </html>
   );

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 
+import { ThemeTabs } from "@/components/theme-toggle";
 import {
   CommandDialog,
   CommandEmpty,
@@ -33,13 +34,18 @@ export const CommandMenu = ({ links }: Props) => {
 
   return (
     <>
-      <p className="fixed bottom-0 left-0 right-0 border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden">
-        Press{" "}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">⌘</span>J
-        </kbd>{" "}
-        to open the command menu
-      </p>
+      <div className="fixed bottom-0 left-0 right-0 z-[99999] border-t border-t-muted bg-background px-2 py-1.5 print:hidden">
+        <div className="container mx-auto flex flex-col justify-between gap-2 sm:flex-row items-center">
+          <p className="text-xs text-muted-foreground sm:text-sm">
+            Press{" "}
+            <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+              <span className="text-xs">⌘</span>J
+            </kbd>{" "}
+            to open the command menu
+          </p>
+          <ThemeTabs />
+        </div>
+      </div>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>

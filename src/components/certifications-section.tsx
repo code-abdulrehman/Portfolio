@@ -16,9 +16,11 @@ type Certification = {
 export function CertificationsSection({
   certifications,
   defaultCount = 6,
+  title = "Certifications",
 }: {
   certifications: readonly Certification[];
   defaultCount?: number;
+  title?: string;
 }) {
   const [expanded, setExpanded] = useState(false);
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -56,7 +58,7 @@ export function CertificationsSection({
 
   return (
     <Section>
-      <h2 className="text-xl font-bold">Certifications</h2>
+      <h2 className="text-xl font-bold">{title}</h2>
 
       <div className="relative">
         {/* Print/PDF: show full list without toggles */}
@@ -88,7 +90,7 @@ export function CertificationsSection({
         {/* Screen: interactive preview */}
         <div className="print:hidden">
         {!expanded && canToggle ? (
-          <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-14 bg-gradient-to-b from-transparent to-white" />
+          <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-14 bg-gradient-to-b from-transparent to-background" />
         ) : null}
 
         <div

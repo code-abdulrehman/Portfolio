@@ -111,9 +111,9 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
           </>
           </Card>
       ) :
-      <Card className="relative flex flex-col overflow-hidden border border-muted p-3 cursor-not-allowed" style={{background: "linear-gradient(to bottom,rgba(255, 255, 255, 0.28),rgba(255, 255, 255, 0.18))", backdropFilter: "blur(10px)"}}>
+      <Card className="relative flex flex-col overflow-hidden border border-muted p-3 cursor-not-allowed bg-background/50 backdrop-blur">
       <>
-      <div className="absolute inset-0 bg-[#ffffffd7] backdrop-blur-sm rounded-lg z-100 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm">
       <p className="text-sm text-muted-foreground">
           {condition.description ? condition.description : ""}
         </p>
