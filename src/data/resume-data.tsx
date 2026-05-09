@@ -147,6 +147,15 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   },
   certifications: [
     {
+      name: "Y Combinator - Working as a Software Engineer at a Start Up Job Simulation",
+      issuer: "Forage",
+      issued: "May 2026",
+      credentialId: "ddnYP33Yp6FiS2YnP",
+      bullets: [
+        "Gained hands-on experience simulating real-world software engineering tasks in a startup environment, including problem-solving, building features, and adapting to fast-paced development cycles.",
+      ],
+    },
+    {
       name: "Skyscanner - Front-End Software Engineering Job Simulation",
       issuer: "Forage",
       issued: "May 2026",
