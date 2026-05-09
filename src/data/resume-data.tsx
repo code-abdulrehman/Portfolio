@@ -147,6 +147,16 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   },
   certifications: [
     {
+      name: "Skyscanner - Front-End Software Engineering Job Simulation",
+      issuer: "Forage",
+      issued: "May 2026",
+      credentialId: "Qfu43W5EqtydBFXDz",
+      bullets: [
+        "Completed a job simulation where I built a web application using React as a front-end engineer at Skyscanner.",
+        "Learned about the Skyscanner's frontend development process and best practices.",
+      ],
+    },
+    {
       name: "Deloitte Australia Technology Job Simulation (Forage)",
       issuer: "Forage",
       issued: "May 2026",

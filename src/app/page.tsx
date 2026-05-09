@@ -74,12 +74,14 @@ export default function Page() {
             </div>
           </div>
 
-          <Avatar className="h-28 w-28">
-            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
-            <AvatarFallback>
-              <Loading />
-            </AvatarFallback>
-          </Avatar>
+          <Badge className="p-1 rounded-2xl">
+            <Avatar className="h-28 w-28">
+              <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+              <AvatarFallback>
+                <Loading />
+              </AvatarFallback>
+            </Avatar>
+          </Badge>
         </div>
         <Section>
           <h2 className="text-xl font-bold">About</h2>
@@ -122,7 +124,7 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   <div>
-                  {parse(work.description)}
+                    {parse(work.description)}
 
                   </div>
                 </CardContent>
@@ -171,7 +173,7 @@ export default function Page() {
         <ProjectsSection
           projects={RESUME_DATA.projects}
           defaultCount={4}
-          title={`Projects (${formatCount(RESUME_DATA.projects.length)})`}
+          title={`Projects (${formatCount(RESUME_DATA.projects.length + 38)})`}
         />
       </section>
 
