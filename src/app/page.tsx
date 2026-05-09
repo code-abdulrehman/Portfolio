@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  const formatCount = (n: number) => (n >= 40 ? `${n}+` : `${n}`);
+  const formatCount = (n: number) => (n >= 10 ? `${n}+` : `${n}`);
 
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">

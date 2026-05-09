@@ -3,6 +3,7 @@ import NSNLogo from "../images/logos/nsn.svg";
 import { GitHubIcon } from "@/components/icons/GitHubIcon";
 import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 import { WhatsappIcon } from "@/components/icons/Whatsapp";
+import { CalendarIcon } from "lucide-react";
 
 function calculateMonthYearDiff(startDateStr: string) {
   const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
@@ -44,13 +45,17 @@ export const RESUME_DATA = {
 I build responsive, SEO-friendly interfaces with React, Next.js and Vue, and I care about performance, accessibility, and clean design systems.
 I also build full-stack features with Node/Express and Phoenix LiveView, working with databases and APIs.
 My mindset is systems-first (reliability, clarity, and scalable architecture) and I’m growing into product ownership: understand the problem, propose the solution, and deliver end-to-end.`,
-  
   avatarUrl:
     "https://avatars.githubusercontent.com/u/184140412?v=4",
   contact: {
     email: "code.abdulrehman+resume@gmail.com",
     // tel: "+923377916802",
     social: [
+      {
+        name: "Calendly",
+        url: "https://calendly.com/abdulrehman62/30minthis",
+        icon: CalendarIcon,
+      },
       {
         name: "GitHub",
         url: "https://github.com/code-abdulrehman/",
