@@ -132,6 +132,13 @@ export default function Page() {
             );
           })}
         </Section>
+
+        <ProjectsSection
+          projects={RESUME_DATA.projects}
+          defaultCount={4}
+          title={`Projects (${formatCount(RESUME_DATA.projects.length + 38)})`}
+        />
+
         <Section>
           <h2 className="text-xl font-bold">Education ({RESUME_DATA.education.length})</h2>
           {RESUME_DATA.education.map((education) => {
@@ -152,14 +159,6 @@ export default function Page() {
             );
           })}
         </Section>
-        <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section>
 
         {"certifications" in RESUME_DATA ? (
           <CertificationsSection
@@ -169,12 +168,14 @@ export default function Page() {
           />
         ) : null}
 
-        {/* Default: 2 full rows (4 items) + half row peek */}
-        <ProjectsSection
-          projects={RESUME_DATA.projects}
-          defaultCount={4}
-          title={`Projects (${formatCount(RESUME_DATA.projects.length + 38)})`}
-        />
+        <Section>
+          <h2 className="text-xl font-bold">Skills</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+        </Section>
       </section>
 
       <CommandMenu

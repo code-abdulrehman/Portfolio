@@ -136,8 +136,8 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
     {
       company: "Prettiflow",
       link: "#",
-      badges: [],
-      title: "Fellowship & UGC Creator",
+      badges: ["Fellowship"],
+      title: "UGC Creator",
       logo: NSNLogo,
       start: "Apr. 2026",
       end: "May 2026",
@@ -146,13 +146,14 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
           <div class="ml-5">
             • Created UGC content to promote the platform<br/>
             • Participated in fellowship program<br/>
+            • Contributed to early product testing and user feedback<br/>
           </div>
       `,
     },
     {
       company: "Nuralyxai",
       link: "#",
-      badges: [],
+      badges: ["Internship"],
       title: "Growth Intern",
       logo: NSNLogo,
       start: "May 2026",
@@ -339,10 +340,15 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
     "Auth (OAuth, JWT)",
     "Firebase",
     "Clerk",
+    "Paddle (Payments)",
+    "PostHog (Analytics)",
     "Vercel",
+    "Render",
+    "Neon DB",
     "Docker (basic)",
     "Git & GitHub",
     "Postman / Insomnia",
+    "SQA",
   ],
   projects: [
     {

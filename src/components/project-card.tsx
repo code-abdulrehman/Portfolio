@@ -77,18 +77,18 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
                   <a
                     href={link}
                     target="_blank"
-                    className="inline-flex items-center gap-1 hover:underline"
+                    className="inline-flex print:flex-col print:gap-0 items-start gap-1 hover:underline print:text-xs"
                   >
                     {title}{" "}
                     <span className="h-1 w-1 rounded-full bg-green-500 animate-pulse"></span>
+                    <span className="hidden print:inline text-xs underline text-primary">
+                      {link.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
+                    </span>
                   </a>
                 ) : (
                   title
                 )}
               </CardTitle>
-              <div className="hidden font-mono text-xs underline print:visible">
-                {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-              </div>
               <CardDescription className="font-mono text-xs">
                 {description}
               </CardDescription>
@@ -111,9 +111,9 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
           </>
           </Card>
       ) :
-      <Card className="relative flex flex-col overflow-hidden border border-muted p-3 cursor-not-allowed bg-background/50 backdrop-blur">
+      <Card className="relative flex flex-col overflow-hidden border border-muted p-3 cursor-not-allowed bg-background/50 backdrop-blur print:cursor-auto print:bg-background">
       <>
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm print:hidden">
       <p className="text-sm text-muted-foreground">
           {condition.description ? condition.description : ""}
         </p>
@@ -123,23 +123,23 @@ export function ProjectCard({ title, description, tags, link, condition }: Props
       </div>
       <CardHeader className="">
         <div className="space-y-1">
-          <CardTitle className="text-base cursor-not-allowed">
+          <CardTitle className="text-base cursor-not-allowed print:cursor-auto">
             {link ? (
               <a
-                // href={link}
+                href={link}
                 target="_blank"
-                className="inline-flex items-center gap-1 hover:underline"
+                className="inline-flex items-center gap-1 hover:underline print:text-xs"
               >
                 {title}{" "}
-                <span className="h-1 w-1 rounded-full bg-orange-500 animate-pulse"></span>
+                <span className="h-1 w-1 rounded-full bg-orange-500 animate-pulse print:hidden"></span>
+                <span className="hidden print:inline font-mono text-xs underline text-primary">
+                  {link.replace("https://", "").replace("www.", "").replace(/\/$/, "")}
+                </span>
               </a>
             ) : (
               title
             )}
           </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-          </div>
           <CardDescription className="font-mono text-xs">
             {description}
           </CardDescription>
