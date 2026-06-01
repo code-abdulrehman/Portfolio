@@ -89,26 +89,95 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   ],
   work: [
     {
-      company: "Dycoders",
+      company: "DyCoders",
       link: "https://www.dycoders.com/",
       badges: ["Full-time"],
-      title: "Frontend Engineer",
+      title: "Jr. Full Stack Developer",
       logo: NSNLogo,
-      start: "Mar. 2024",
+      start: "Oct. 2025",
       end: "Present",
       description: `
       - Team size: 8+<br/>
       - Responsibilities:<br/>
           <div class="ml-5">
-            • Build and ship UI features based on requirements and user feedback<br/>
-            • Fix bugs, improve UX flows, and maintain reusable components<br/>
-            • Collaborate with design/product to estimate work and deliver iteratively<br/>
+            • Developed full-stack features using Phoenix LiveView and Elixir<br/>
+            • Built AI-powered tools for Learning and Development platform<br/>
+            • Worked across the stack: frontend, backend, and database layers<br/>
           </div>
       - Technologies: <br/>
           <div class="ml-5">
-            • React, Vue, Next.js, LiveView, Tailwind, PrimeVue <br/>
+            • LiveView, Elixir, Generative AI, React, Node.js<br/>
           </div>
-      - Tools control: Git, Postman, Jira, Figma, VSCode, Cursor, Insomnia, etc.
+      `,
+    },
+    {
+      company: "DyCoders",
+      link: "https://www.dycoders.com/",
+      badges: ["Full-time"],
+      title: "Frontend Developer",
+      logo: NSNLogo,
+      start: "Apr. 2024",
+      end: "Oct. 2025",
+      description: `
+      - Team size: 8+<br/>
+      - Responsibilities:<br/>
+          <div class="ml-5">
+            • Built responsive UI components with Vue.js and React<br/>
+            • Collaborated on frontend architecture and state management<br/>
+            • Contributed to code reviews and maintained design system components<br/>
+          </div>
+      - Technologies: <br/>
+          <div class="ml-5">
+            • Vue.js, React, GitHub, Tailwind, PrimeVue<br/>
+          </div>
+      - Tools control: Git, Postman, Jira, Figma, VSCode, etc.
+      `,
+    },
+    {
+      company: "Prettiflow",
+      link: "#",
+      badges: [],
+      title: "Fellowship & UGC Creator",
+      logo: NSNLogo,
+      start: "Apr. 2026",
+      end: "May 2026",
+      description: `
+      - Responsibilities:<br/>
+          <div class="ml-5">
+            • Created UGC content to promote the platform<br/>
+            • Participated in fellowship program<br/>
+          </div>
+      `,
+    },
+    {
+      company: "Nuralyxai",
+      link: "#",
+      badges: [],
+      title: "Growth Intern",
+      logo: NSNLogo,
+      start: "May 2026",
+      end: "May 2026",
+      description: `
+      - Responsibilities:<br/>
+          <div class="ml-5">
+            • Supported growth initiatives and marketing efforts<br/>
+          </div>
+      `,
+    },
+    {
+      company: "SnapperUI",
+      link: "#",
+      badges: ["Internship"],
+      title: "Product Growth & SQA",
+      logo: NSNLogo,
+      start: "May 2026",
+      end: "May 2026",
+      description: `
+      - Responsibilities:<br/>
+          <div class="ml-5">
+            • Contributed to product growth strategy<br/>
+            • Performed software quality assurance testing<br/>
+          </div>
       `,
     },
     {
@@ -277,9 +346,24 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   ],
   projects: [
     {
+      title: "CVMatch AI",
+      techStack: [
+        "Full Stack",
+        "AI",
+        "ATS",
+        "CV",
+        "PDF",
+      ],
+      description: "AI-powered CV matching and ATS-friendly resume generation for job seekers. Upload once, tailor forever.",
+      link: {
+        label: "CVMatch AI",
+        href: "https://cvmatch.imabdulrehman.site/",
+      },
+    },
+    {
       title: "40+ Projects",
       techStack: ["Portfolio", "Catalog", "Links"],
-      description: "A complete catalog of my projects (company + personal) in one place.",
+      description: "A complete catalog of my projects (company + personal) in one place. Check out my work!",
       link: {
         label: "Open projects sheet",
         href: "https://docs.google.com/spreadsheets/d/1BEQc6yUOHxgZRULBS-7Qg4mZnge5ylxdhpsgHArHTIY/edit?gid=0#gid=0",
@@ -303,7 +387,7 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
         "SEO",
         "Vue.js",
       ],
-      description: "ASTELECOM is a leading electronics company. ",
+      description: "ASTELECOM is a leading electronics company. Sell electronics online in Pakistan.",
       keywords: ["ASTELECOM", "Electronics", "Company", "Pakistan"],
       link: {
         label: "ASTELECOM",
