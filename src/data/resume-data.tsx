@@ -352,6 +352,30 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
   ],
   projects: [
     {
+  title: "zLynqo",
+  techStack: [
+    "AI",
+    "CRM",
+    "LinkedIn",
+    "Matching"
+  ],
+  description:
+    "AI-powered network intelligence platform for finding the right people for outreach, recruiting, hiring, lead generation, and relationship-driven growth.",
+  link: {
+    label: "zLynQo",
+    href: "https://zlynqo.imabdulrehman.site/",
+  },
+},
+    {
+      title: "40+ Projects",
+      techStack: ["Portfolio", "Catalog", "Links"],
+      description: "A complete catalog of my projects (company + personal) in one place. Check out my work!",
+      link: {
+        label: "Open projects sheet",
+        href: "https://docs.google.com/spreadsheets/d/1BEQc6yUOHxgZRULBS-7Qg4mZnge5ylxdhpsgHArHTIY/edit?gid=0#gid=0",
+      },
+    },
+     {
       title: "CVMatch AI",
       techStack: [
         "Full Stack",
@@ -364,15 +388,6 @@ My mindset is systems-first (reliability, clarity, and scalable architecture) an
       link: {
         label: "CVMatch AI",
         href: "https://cvmatch.imabdulrehman.site/",
-      },
-    },
-    {
-      title: "40+ Projects",
-      techStack: ["Portfolio", "Catalog", "Links"],
-      description: "A complete catalog of my projects (company + personal) in one place. Check out my work!",
-      link: {
-        label: "Open projects sheet",
-        href: "https://docs.google.com/spreadsheets/d/1BEQc6yUOHxgZRULBS-7Qg4mZnge5ylxdhpsgHArHTIY/edit?gid=0#gid=0",
       },
     },
     {
